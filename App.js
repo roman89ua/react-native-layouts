@@ -45,7 +45,7 @@ export default function App() {
           // flexBasis: 100, // width: 100,
           // flex: 1,
           width: 200,
-          flex: -1,
+          flex: -1, // flexSrink: 1,
           height: 100,
         }}
       />
