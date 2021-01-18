@@ -20,8 +20,15 @@ const styles = StyleSheet.create({
     backgroundColor: "dodgerblue",
     width: 100,
     height: 100,
-    borderWidth: 10,
-    borderColor: "black",
-    borderRadius: 50,
+    // borderWidth: 10,
+    // borderColor: "black",
+    // borderRadius: 50,
+    shadowColor: "grey",
+    shadowOffset: {
+      width: 10,
+      height: 10,
+    },
+    shadowOpacity: 1,
+    elevation: 10,
   },
 });
