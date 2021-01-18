@@ -1,13 +1,15 @@
 import React from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+
+import MainText from "../components/main-text";
 
 const SecondLesson = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>
+      <MainText style={styles.header}>
         hello react native! Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Eaque, ipsa.{" "}
-      </Text>
+        elit. Eaque, ipsa.
+      </MainText>
       <View style={styles.blueBox}>
         <View style={styles.goldBox} />
       </View>
@@ -45,17 +47,17 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
   },
-  header: {
-    fontSize: 20,
-    fontFamily: Platform.OS === "android" ? "Roboto" : "Courier",
-    fontStyle: "italic",
-    fontWeight: "600",
-    color: "tomato",
-    textTransform: "capitalize",
-    textDecorationLine: "underline",
-    textAlign: "left", // "right", "center"
-    lineHeight: 30,
-  },
+  // header: {
+  //   fontSize: 20,
+  //   fontFamily: Platform.OS === "android" ? "Roboto" : "Courier",
+  //   fontStyle: "italic",
+  //   fontWeight: "600",
+  //   color: "tomato",
+  //   textTransform: "capitalize",
+  //   textDecorationLine: "underline",
+  //   textAlign: "left", // "right", "center"
+  //   lineHeight: 30,
+  // },
   redBox: {
     backgroundColor: "tomato",
     width: 100,
