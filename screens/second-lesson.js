@@ -1,21 +1,7 @@
 import React from "react";
-import {
-  // Dimensions,
-  // Platform,
-  // StatusBar,
-  // SafeAreaView,
-  StyleSheet,
-  View,
-  // Text,
-} from "react-native";
-
-// import {
-// useDimensions,
-// useDeviceOrientation,
-// } from "@react-native-community/hooks";
+import { StyleSheet, View } from "react-native";
 
 const SecondLesson = () => {
-  // const { landscape, portrait } = useDeviceOrientation();
   return (
     <View style={styles.container}>
       <View style={styles.box} />
