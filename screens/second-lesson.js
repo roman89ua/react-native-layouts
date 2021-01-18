@@ -1,9 +1,13 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { Platform, StyleSheet, Text, View } from "react-native";
 
 const SecondLesson = () => {
   return (
     <View style={styles.container}>
+      <Text style={styles.header}>
+        hello react native! Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Eaque, ipsa.{" "}
+      </Text>
       <View style={styles.blueBox}>
         <View style={styles.goldBox} />
       </View>
@@ -14,11 +18,6 @@ const SecondLesson = () => {
 export default SecondLesson;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
   blueBox: {
     backgroundColor: "dodgerblue",
     width: 100,
@@ -36,10 +35,26 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginBottom: 20,
   },
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   goldBox: {
     backgroundColor: "gold",
     width: 50,
     height: 50,
+  },
+  header: {
+    fontSize: 20,
+    fontFamily: Platform.OS === "android" ? "Roboto" : "Courier",
+    fontStyle: "italic",
+    fontWeight: "600",
+    color: "tomato",
+    textTransform: "capitalize",
+    textDecorationLine: "underline",
+    textAlign: "left", // "right", "center"
+    lineHeight: 30,
   },
   redBox: {
     backgroundColor: "tomato",
