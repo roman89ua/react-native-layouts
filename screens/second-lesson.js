@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 
-import MainText from "../components/mainText";
+import MainText from "../components/MainTextComponent";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const SecondLesson = () => {
