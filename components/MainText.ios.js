@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, StyleSheet, Platform } from "react-native";
+import { Text, StyleSheet } from "react-native";
 
 import PropTypes from "prop-types";
 
@@ -9,8 +9,8 @@ const MainText = ({ children }) => {
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 16,
-    fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
+    fontSize: 20,
+    fontFamily: "Avenir",
     color: "red",
     textAlign: "center",
     textDecorationLine: "underline",
