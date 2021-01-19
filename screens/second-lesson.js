@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 
 import MainText from "../components/main-text";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const SecondLesson = () => {
   return (
@@ -11,9 +12,11 @@ const SecondLesson = () => {
         elit. Eaque, ipsa.
       </MainText>
       <View style={styles.blueBox}>
-        <View style={styles.goldBox} />
+        <View style={styles.goldBox}>
+          <MaterialCommunityIcons name="email" size={50} color="dodgerblue" />
+        </View>
       </View>
-      <View style={styles.redBox}></View>
+      <View style={styles.redBox} />
     </View>
   );
 };
